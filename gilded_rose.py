@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod # ABC: Abstract Base Class
 
 
 class Item:
@@ -17,6 +17,8 @@ class Item:
 class ItemStrategy(ABC):
     """Abstract base class for all Item strategies."""
 
+    # A blueprint for item strategies.
+    # Each concrete strategy must implement the update_quality method.
     @abstractmethod
     def update_quality(self, item: Item):
         pass
